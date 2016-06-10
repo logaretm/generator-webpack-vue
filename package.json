@@ -1,0 +1,24 @@
+{
+  "name": "generator-logaretm-webpack",
+  "version": "0.1.0",
+  "description": "Simple yeoman webpack generator with vuejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "laravel",
+    "webpack",
+    "vuejs"
+  ],
+  "files": [
+    "app"
+  ],
+  "author": "Abdelrahman Awad<logaretm1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.23.3"
+  }
+}
