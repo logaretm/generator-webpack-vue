@@ -1,7 +1,17 @@
 # generator-logaretm-webpack
-This is a simple yeoman-generator package to build a Webpack dev environment.
+This is a simple yeoman generator to build a Webpack dev environment.
 
-### Setup
+#### Install
+
+You need yeoman to make this generator work.
+
+`npm install -g yo`
+
+Then install the generator
+
+`npm install -g generator-logaretm-webpack`
+
+#### Setup
 My setup is using VueJS and Webpack along with Babel.js and Stylus for frontend things.
 
 I use Laravel as a backend framework, so some configurations may be opinionated towards it, like the resources paths.
