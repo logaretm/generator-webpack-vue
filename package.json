@@ -2,6 +2,10 @@
   "name": "generator-webpack-vue",
   "version": "0.1.0",
   "description": "Simple yeoman webpack generator with vuejs and stylus.",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/logaretm/generator-webpack-vue"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
