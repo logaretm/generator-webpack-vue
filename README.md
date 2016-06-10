@@ -1,4 +1,4 @@
-# generator-logaretm-webpack
+# generator-webpack-vue
 This is a simple yeoman generator to build a Webpack dev environment.
 
 #### Install
