@@ -3,13 +3,17 @@ This is a simple yeoman generator to build a Webpack dev environment.
 
 #### Install
 
-You need yeoman to make this generator work.
+You need yeoman to make this generator work:
 
 `npm install -g yo`
 
-Then install the generator
+Then install the generator:
 
-`npm install -g generator-logaretm-webpack`
+`npm install -g generator-webpack-vue`
+
+then run:
+
+`yo webpack-vue`
 
 #### Setup
 My setup is using VueJS and Webpack along with Babel.js and Stylus for frontend things.
