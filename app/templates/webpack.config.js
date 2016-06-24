@@ -19,8 +19,8 @@ const PATHS = {
 var config = require("./build/base.config")(PATHS);
 
 var envConfig = production ? require("./build/prod.config") : require("./build/dev.config")({
-    host: process.HOST,
-    port: process.PORT
+    host: null,
+    port: null
 });
 
 config = merge(

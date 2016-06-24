@@ -11,8 +11,10 @@ module.exports = function(options) {
             hot: true,
             inline: true,
             stats: "errors-only",
-            host: options.host,
-            port: options.port
+            contentBase: "/public",
+            proxy: { "*": "http://egymarco.dev" },
+            host: options.host || "0.0.0.0",
+            port: options.port || "8080"
         },
         plugins: [
             new webpack.HotModuleReplacementPlugin({
