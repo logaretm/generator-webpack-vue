@@ -8,6 +8,7 @@ module.exports = [
     "cross-env",
     "css-loader",
     "eslint",
+    "eslint-plugin-vue",
     "extract-text-webpack-plugin",
     "file-loader",
     "purifycss-webpack-plugin",

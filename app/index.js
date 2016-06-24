@@ -13,6 +13,7 @@ module.exports = generators.Base.extend({
     writing: function () {
         mkdirp(this.destinationRoot() + "/build");
         this.copy("package.json", "package.json");
+        this.copy(".babelrc", ".babelrc");
         this.copy("webpack.config.js", "webpack.config.js");
         this.copy("build/base.config.js", "build/base.config.js");
         this.copy("build/dev.config.js", "build/dev.config.js");

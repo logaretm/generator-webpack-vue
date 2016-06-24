@@ -11,10 +11,7 @@ module.exports = function (paths) {
         devtool: production ? "source-map" : "eval",
         entry: {
             "front.app": paths.front.app,
-            "front.style": paths.front.style,
-            "front.vendor": paths.front.vendor,
-            "back.app": paths.back.app,
-            "back.vendor": paths.back.vendor
+            "back.app": paths.back.app
         },
         output: {
             path: paths.build,
@@ -38,23 +35,19 @@ module.exports = function (paths) {
                 {
                     test: /\.js$/,
                     loader: "babel",
-                    exclude: /(node_modules|bower_components)/,
-                    query: {
-                        presets: ['es2015'],
-                        plugins: ['transform-runtime']
-                    }
+                    exclude: /(node_modules|bower_components)/
                 },
                 {
                     test: /\.css$/,
                     loader: ExtractTextPlugin.extract("style", "css")
                 },
                 {
-                    test: /\.vue$/,
-                    loader: "vue"
+                    test: /\.styl$/,
+                    loader: ExtractTextPlugin.extract("style", "css!stylus")
                 },
                 {
-                    test: /\.html$/,
-                    loader: "vue-html"
+                    test: /\.vue$/,
+                    loader: "vue"
                 },
                 {
                     test: /\.(png|gif|jpe?g)$/i,
@@ -102,7 +95,6 @@ module.exports = function (paths) {
         util.extractChunk({
             name: "vendor",
             entries: ["vue"]
-        }),
-        util.extractStylus(paths.front.style)
+        })
     );
 };

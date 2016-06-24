@@ -10,12 +10,9 @@ const PATHS = {
     build: path.join(__dirname, "public", "build"),
     front: {
         app: path.join(ASSETS_PATH, "js", "front", "main.js"),
-        style: path.join(ASSETS_PATH, "stylus", "app.styl"),
-        vendor: path.join(ASSETS_PATH, "js", "vendor.js")
     },
     back: {
         app: path.join(ASSETS_PATH, "js", "back", "main.js"),
-        vendor: path.join(ASSETS_PATH, "js", "back", "vendor.js")
     }
 };
 
